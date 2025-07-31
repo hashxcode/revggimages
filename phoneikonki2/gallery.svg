@@ -1,0 +1,30 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="gallery">
+<g clip-path="url(#clip0_19_531)">
+<g id="Clip path group">
+<mask id="mask0_19_531" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="128" height="128">
+<g id="clip0_1_46">
+<path id="Vector" d="M93 0H35C15.67 0 0 15.67 0 35V93C0 112.33 15.67 128 35 128H93C112.33 128 128 112.33 128 93V35C128 15.67 112.33 0 93 0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_19_531)">
+<g id="Group">
+<path id="Vector_2" d="M93 0H35C15.67 0 0 15.67 0 35V93C0 112.33 15.67 128 35 128H93C112.33 128 128 112.33 128 93V35C128 15.67 112.33 0 93 0Z" fill="white"/>
+<path id="Vector_3" d="M101 56C126.405 56 147 35.4051 147 10C147 -15.4051 126.405 -36 101 -36C75.5949 -36 55 -15.4051 55 10C55 35.4051 75.5949 56 101 56Z" fill="#FFBC4E"/>
+<path id="Vector_4" d="M133 110C158.405 110 179 89.4051 179 64C179 38.5949 158.405 18 133 18C107.595 18 87 38.5949 87 64C87 89.4051 107.595 110 133 110Z" fill="#9BD25B"/>
+<path id="Vector_5" d="M27 75C1.5949 75 -19 95.5949 -19 121C-19 146.405 1.5949 167 27 167C52.4051 167 73 146.405 73 121C73 95.5949 52.4051 75 27 75Z" fill="#AD80DB"/>
+<path id="Vector_6" d="M101 75C75.5949 75 55 95.5949 55 121C55 146.405 75.5949 167 101 167C126.405 167 147 146.405 147 121C147 95.5949 126.405 75 101 75Z" fill="#45C0DF"/>
+<path id="Vector_7" d="M-4 110C21.4051 110 42 89.4051 42 64C42 38.5949 21.4051 18 -4 18C-29.4051 18 -50 38.5949 -50 64C-50 89.4051 -29.4051 110 -4 110Z" fill="#F27C79"/>
+<path id="Vector_8" d="M27 56C52.4051 56 73 35.4051 73 10C73 -15.4051 52.4051 -36 27 -36C1.5949 -36 -19 -15.4051 -19 10C-19 35.4051 1.5949 56 27 56Z" fill="#FF6993"/>
+</g>
+</g>
+</g>
+</g>
+<rect x="0.5" y="0.5" width="127" height="127" rx="49.5" stroke="white" stroke-opacity="0.25" style="mix-blend-mode:overlay"/>
+</g>
+<defs>
+<clipPath id="clip0_19_531">
+<rect width="128" height="128" rx="50" fill="white"/>
+</clipPath>
+</defs>
+</svg>

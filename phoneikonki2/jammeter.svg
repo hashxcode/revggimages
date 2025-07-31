@@ -1,0 +1,16 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="128" height="128" rx="50" fill="url(#paint0_radial_19_552)"/>
+<rect x="0.5" y="0.5" width="127" height="127" rx="49.5" stroke="white" stroke-opacity="0.25" style="mix-blend-mode:overlay"/>
+<rect x="22" y="46" width="11" height="36" rx="1" fill="#090808"/>
+<path d="M37 47C37 46.4477 37.4477 46 38 46H47C47.5523 46 48 46.4477 48 47V81C48 81.5523 47.5523 82 47 82H38C37.4477 82 37 81.5523 37 81V47Z" fill="#090808"/>
+<path d="M52 47C52 46.4477 52.4477 46 53 46H61C61.5523 46 62 46.4477 62 47V81C62 81.5523 61.5523 82 61 82H53C52.4477 82 52 81.5523 52 81V47Z" fill="#090808"/>
+<path d="M65 47C65 46.4477 65.4477 46 66 46H75C75.5523 46 76 46.4477 76 47V81C76 81.5523 75.5523 82 75 82H66C65.4477 82 65 81.5523 65 81V47Z" fill="#090808"/>
+<path d="M80 47C80 46.4477 80.4477 46 81 46H90C90.5523 46 91 46.4477 91 47V81C91 81.5523 90.5523 82 90 82H81C80.4477 82 80 81.5523 80 81V47Z" fill="#090808"/>
+<path d="M95 47C95 46.4477 95.4477 46 96 46H105C105.552 46 106 46.4477 106 47V81C106 81.5523 105.552 82 105 82H96C95.4477 82 95 81.5523 95 81V47Z" fill="#090808"/>
+<defs>
+<radialGradient id="paint0_radial_19_552" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(64 128) rotate(-90) scale(128)">
+<stop stop-color="#75A586"/>
+<stop offset="1" stop-color="#B7CDBF"/>
+</radialGradient>
+</defs>
+</svg>
