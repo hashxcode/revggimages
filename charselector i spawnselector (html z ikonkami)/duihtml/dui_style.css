@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+	font-size: 1.481481481481481vh;
+	--scale: 1.25;
+	--scaleLocationFonts: 1.25;
+}
+
+@property --gradientStart {
+	syntax: '<color>';
+	inherits: true;
+	initial-value: rgba(7, 11, 21, 0);
+}
+
+@property --gradientEnd {
+	syntax: '<color>';
+	inherits: true;
+	initial-value: rgba(7, 11, 21, 255);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+	color: #fff;
+	user-select: none;
+}
+
+#container {
+	width: 100vw;
+	height: 100vh;
+	background: #070b15;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: calc(4.56rem * var(--scale)) calc(9.56rem * var(--scale));
+	gap: calc(2.62rem * var(--scale));
+}
+
+#container > .header {
+	display: flex;
+	flex-direction: column;
+	gap: calc(1.25rem * var(--scale));
+	align-items: center;
+}
+#container > .header > .label {
+	font-size: calc(3rem * var(--scale));
+	font-weight: 500;
+}
+#container > .header > .desc {
+	font-size: calc(1.25rem * var(--scale));
+	color: rgba(255, 255, 255, 0.5);
+}
+#container > .locations {
+	display: grid;
+	grid-template-rows: repeat(2, calc(13.125rem * var(--scale)));
+	grid-template-columns: repeat(2, calc(30.125rem * var(--scale)));
+	grid-gap: calc(0.625rem * var(--scale));
+}
+#container > .locations > .location {
+	position: relative;
+	border-radius: calc(0.4375rem * var(--scale));
+	border: calc(0.0625rem * var(--scale)) solid rgba(255, 255, 255, 0.1);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: calc(1.625rem * var(--scale)) calc(1.5rem * var(--scale));
+	gap: calc(0.75rem * var(--scale));
+	cursor: pointer;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+#container > .locations > .location:hover {
+	filter: brightness(1.2);
+}
+#container > .locations > .location:active {
+	transform: scale(0.95);
+}
+#container > .locations > .location > img {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+#container > .locations > .location > .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	background: linear-gradient(
+		180deg,
+		var(--gradientStart) 0%,
+		var(--gradientEnd) 100%
+	);
+	transition: --gradientStart 0.3s ease-in-out, --gradientEnd 0.3s ease-in-out;
+}
+
+#container > .locations > .location > .selected {
+	position: relative;
+	color: rgba(255, 255, 255, 0.9);
+	font-size: calc(0.75rem * var(--scale) * var(--scaleLocationFonts));
+	font-weight: 700;
+	border-radius: calc(0.25rem * var(--scale) * var(--scaleLocationFonts));
+	background: rgba(67, 76, 91, 0.9);
+	padding: calc(0.25rem * var(--scale) * var(--scaleLocationFonts))
+		calc(0.375rem * var(--scale) * var(--scaleLocationFonts));
+	transition: opacity 0.3s ease-in-out;
+	opacity: 0;
+	z-index: 3;
+}
+#container > .locations > .location > .label {
+	position: relative;
+	font-size: calc(1.5rem * var(--scale) * var(--scaleLocationFonts));
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.5);
+	z-index: 3;
+	transition: all 0.3s ease-in-out;
+}
+
+#container > .locations > .location.select > .overlay {
+	--gradientStart: rgba(40, 88, 210, 0.5);
+	--gradientEnd: rgba(7, 11, 21, 1);
+}
+#container > .locations > .location.select > .selected {
+	opacity: 1;
+}
+#container > .locations > .location.select > .label {
+	color: #fff;
+	font-weight: 700;
+}
+
+#container > .buttons {
+	display: flex;
+	gap: calc(1.25rem * var(--scale));
+}
+
+#container > .buttons > .button {
+	width: calc(32.6875rem / 1.5 * var(--scale));
+	height: calc(5rem * var(--scale));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: calc(0.4375rem * var(--scale));
+	background: radial-gradient(
+		50% 50% at 50% 50%,
+		hsl(223, 68%, 49%) 0%,
+		hsl(223, 67%, 30%) 100%
+	);
+	font-size: calc(1.5rem * var(--scale));
+	font-weight: 700;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+#container > .buttons > .button.cancel {
+	background: radial-gradient(50% 57% at 50% 50%, #f54f4f 0%, #790b0b 100%);
+}
+
+#container > .buttons > .button:hover {
+	filter: brightness(1.2);
+}
+#container > .buttons > .button.cancel:hover {
+	filter: brightness(0.8);
+}
+#container > .buttons > .button:active {
+	transform: scale(0.95);
+}
+
+#container > .buttons > .button.disabled {
+	pointer-events: none;
+	filter: grayscale(1);
+}
